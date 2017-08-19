@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: '/blog',
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "thecopywriter.io blog",
+    author: "Jens Becker",
   },
   plugins: [
     {
