@@ -8,7 +8,7 @@ class Template extends React.Component {
   render() {
     const { location, children } = this.props
     let header
-    if (location.pathname === '/blog') {
+    if (location.pathname === '/') {
       header = (
         <h1
           style={{
@@ -25,7 +25,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            thecopywriter.io Blog
+            FURZ.io Blog
           </Link>
         </h1>
       )
