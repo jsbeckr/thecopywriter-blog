@@ -8,49 +8,27 @@ class Template extends React.Component {
   render() {
     const { location, children } = this.props
     let header
-    if (location.pathname === '/') {
-      header = (
-        <h1
+    header = (
+      <h3
+        style={{
+          fontFamily: 'Montserrat, sans-serif',
+          marginTop: 0,
+          marginBottom: rhythm(1),
+        }}
+      >
+        <Link
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
+            boxShadow: 'none',
+            textDecoration: 'none',
+            color: 'inherit',
           }}
+          to={'/'}
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            FURZ.io Blog
+          thecopywriter.io Blog
           </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            thecopywriter.io Blog
-          </Link>
-        </h3>
-      )
-    }
+      </h3>
+    )
+
     return (
       <Container
         style={{
