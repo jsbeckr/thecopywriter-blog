@@ -11,11 +11,11 @@ class Template extends React.Component {
     if (location.pathname === '/') {
       header = (
         <h1
-          style={{
+          /* style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-          }}
+          }} */
         >
           <Link
             style={{
