@@ -5,6 +5,7 @@ module.exports = {
     author: "Jens Becker",
   },
   plugins: [
+    'gatsby-plugin-catch-links',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
