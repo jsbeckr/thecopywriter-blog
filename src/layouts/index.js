@@ -8,14 +8,14 @@ class Template extends React.Component {
   render() {
     const { location, children } = this.props
     let header
-    if (location.pathname === '/') {
+    if (location.pathname === '/blog') {
       header = (
         <h1
-          /* style={{
+          style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-          }} */
+          }}
         >
           <Link
             style={{
